@@ -15,5 +15,5 @@ var app = require('./server')(env);
 
 // Run server
 app.listen(env.get('PORT', 1989), function () {
-  console.log('Now listening on %d', env.get('PORT'));
+  console.log('Now listening on %d (Likely http://localhost:%d )', env.get('PORT'), env.get('PORT'));
 });
